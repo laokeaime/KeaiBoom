@@ -1,11 +1,4 @@
-/*
- * @Author: N0ts
- * @Date: 2021-06-12 20:02:41
- * @LastEditTime: 2022-03-03 22:34:59
- * @Description: 我的第三个个人主页
- * @FilePath: /NutssssIndex3/js/data.js
- * @Mail：mail@n0ts.cn
- */
+
 
 export default {
     themeSelect: "white",
@@ -55,8 +48,8 @@ export default {
         ]
     },
     lovexhj1: {
-        title: "我是 N0ts",
-        subTitle: "爱好编程，运动，旅行，摄影与冰激凌",
+        title: "记录和宣宣宝贝的日子",
+        subTitle: "亲亲，抱抱，举高高",
         menu: [{
                 name: "Blog",
                 icon: "fa-wordpress",
