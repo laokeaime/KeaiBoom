@@ -1,11 +1,4 @@
-/*
- * @Author: N0ts
- * @Date: 2020-12-25 10:39:42
- * @LastEditTime: 2022-03-03 23:16:41
- * @Description: 我的第三个个人主页
- * @FilePath: /NutssssIndex3/js/lovexhj.js
- * @Mail：mail@n0ts.cn
- */
+
 
 /**
  * 一些引用
