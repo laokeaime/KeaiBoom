@@ -50,32 +50,6 @@ export default {
     lovexhj1: {
         title: "记录和宣宣宝贝的日子",
         subTitle: "亲亲，抱抱，举高高",
-       /* menu: [{
-                name: "Blog",
-                icon: "fa-wordpress",
-                link: "https://blog.n0ts.cn/"
-            },
-            {
-                name: "Email",
-                icon: "fa-envelope",
-                link: "mailto:nutssss@qq.com"
-            },
-            {
-                name: "Gitee",
-                icon: "fa-github",
-                link: "https://gitee.com/n0ts"
-            },
-            {
-                name: "QQ",
-                icon: "fa-qq",
-                link: "https://wpa.qq.com/msgrd?v=3&uin=1656071287&site=qq&menu=yes"
-            },
-            {
-                name: "坚果小栈 - 技术交流",
-                icon: "fa-code",
-                link: "https://jq.qq.com/?_wv=1027&k=qMNJqj3F"
-            }
-        ]*/
     },
     lovexhj2: {
         content: `                    <h1>你好！</h1>
