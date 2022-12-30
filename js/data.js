@@ -50,7 +50,7 @@ export default {
     lovexhj1: {
         title: "记录和宣宣宝贝的日子",
         subTitle: "亲亲，抱抱，举高高",
-        menu: [{
+       /* menu: [{
                 name: "Blog",
                 icon: "fa-wordpress",
                 link: "https://blog.n0ts.cn/"
@@ -75,7 +75,7 @@ export default {
                 icon: "fa-code",
                 link: "https://jq.qq.com/?_wv=1027&k=qMNJqj3F"
             }
-        ]
+        ]*/
     },
     lovexhj2: {
         content: `                    <h1>你好！</h1>
