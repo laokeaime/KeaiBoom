@@ -4,13 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>写给宝贝的年度总结</title>
-        <meta name="description" content="这里是网站介绍" />
-        <meta name="keywords" content="这里是网站关键词" />
+        <meta name="description" content="记录和笨蛋美女的日常" />
+        <meta name="keywords" content="生活" />
         <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="./css/lovexhj.css" />
     </head>
 
     <body>
+        <audio id="myaudio" src="./好好恋爱.mp3" controls="controls" autoplay loop="true" hidden="true"></audio>
         <div id="lovexhj" v-clock>
             <!-- 侧栏按钮 -->
             <div class="sidebar">
@@ -22,6 +23,7 @@
                     <span v-else>切换<b class="sidebarWhiteText">亮</b>色</span>
                 </div>
             </div>
+
 
             <!-- 首页 -->
             <div class="lovexhj1" v-if="lovexhjData" ref="lovexhj1">
@@ -52,30 +54,29 @@
                         </ul>
                     </div>
                 </div>
+                
             </div>
             <!-- 介绍 -->
             <div class="lovexhj2">
                 <!-- 介绍 - 文案 -->
+
                 <div class="lovexhj2TextBox" v-html="lovexhjData.lovexhj2.content"></div>
-                <!-- 介绍 - 图片
-                    <div class="lovexhj2Img" :class="{ lovexhj2ImgAction : meImgShow }" @click="meImgShow = !meImgShow">
-                        <img :src="lovexhjData.lovexhj2.img" :alt="lovexhjData.lovexhj2.img" />
-                    </div>
-                    图片打开时遮罩 -->
-                    <!-- <div
-                        class="lovexhj2ImgBg"
-                        :class="{ lovexhj2ImgShowBg : meImgShow }"
-                        @click="meImgShow = !meImgShow"
-                    ></div> -->
+
             </div>
             <!--  -->
             <div class="lovexhj3"></div>
+            
         </div>
+        
+
 
         <!-- js 引用 -->
         <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.min.js"></script>
         <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.min.js"></script>
         <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
         <script src="./js/lovexhj.js" type="module"></script>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=52 src="//music.163.com/outchain/player?type=2&id=5261521&auto=1&height=32"allow="autoplay"></iframe>
+        <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+        <script src="https://myhkw.cn/player/js/player.js" id="myhk" key="demo" autopaly = '1' m="1"></script> -->
     </body>
 </html>
