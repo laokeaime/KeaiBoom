@@ -827,6 +827,7 @@ html,
     justify-content: space-between;
     box-sizing: border-box;
     width: 85%;
+    top: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
