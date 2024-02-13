@@ -823,11 +823,12 @@ html,
 /* 介绍 */
 .lovexhj2 {
     display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
     width: 85%;
-    top: 150%;
+    top: 8%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -864,7 +865,7 @@ html,
 .lovexhj2TextBox b::after,
 .lovexhj2TextBox a::after {
     content: "";
-    display: flex;
+    display: block;
     width: 100%;
     height: 20%;
     background: #ff4757;
@@ -952,4 +953,14 @@ html,
     backdrop-filter: blur(5px);
     visibility: visible;
     z-index: 10;
+}
+
+.netease-music-player {
+    
+    border-radius: 15px; /* 添加圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    width: 100%; /* 响应式宽度 */
+    max-width: 280px; /* 最大宽度 */
+    overflow: hidden; /* 防止内容溢出 */
+    border: 2px solid #ececec; /* 边框颜色 */
 }
