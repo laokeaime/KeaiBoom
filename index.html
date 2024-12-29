@@ -5,6 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>微信年度聊天报告</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(
+                180deg,
+                #a7d7ff 0%,
+                #bde2ff 25%,
+                #ddedff 50%,
+                #ffe1f5 75%,
+                #ffd1eb 100%
+            );
+            background-attachment: fixed;
+            color: #000000 !important; /* 添加这一行 */
+        }
+    
+        /* 添加以下选择器确保所有文本元素都是黑色 */
+        .text112,
+        .text012,
+        .text113,
+        .keyword-container,
+        .time-container,
+        .calendar-container,
+        p,
+        div {
+            color: #000000 !important;
+        }
+    
+        /* 确保链接文本也是黑色 */
+        a {
+            color: #000000 !important;
+        }
+
+
+        /* 添加标题样式 */
+        .report-title {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-weight: 900;
+            font-size: 48px;
+            color: #000;
+            text-align: left;
+            padding: 20px;
+            line-height: 1.2;
+            letter-spacing: 2px;
+        }
+
+        .year-text {
+            font-size: 52px;
+            font-weight: 900;
+        }
+
+        .emoji {
+            font-weight: normal;
+        }
+    </style>
     <link rel="stylesheet" href="https://memotrace.cn/static/css/style.css">sa
     <script type="text/javascript" src="https://memotrace.cn/js/echarts.min.js"></script>
     <script type="text/javascript" src="https://memotrace.cn/js/echarts-wordcloud.min.js"></script>
@@ -20,14 +76,15 @@
     <div class="section">
         <div>
             <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
-            <img class="corner-light light-top-left" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
-            <img class="corner-light light-top-right" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
-            <img src="https://www.freeimg.cn/i/2023/12/20/6582c0514c518.png" alt="Left Bottom Image" class="corner-image left-bottom">
+            <!-- <img class="corner-light light-top-left" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light"> -->
+            <!-- <img class="corner-light light-top-right" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light"> -->
+            <!-- <img src="WechatIMG394.png" alt="Left Bottom Image" class="corner-image left-bottom"> -->
             <img src="WechatIMG388.png" alt="Right Top Image" class="corner-image right-bottom">
 
         <div class="center-container">
-            <div>
-                <img src="https://www.freeimg.cn/i/2023/12/20/6582c05a78e58.png">
+            <div class="report-title">
+                <span class="year-text">2024</span><span class="emoji">(●'u'●)</span><br>
+                年度恋爱报告
             </div>
             <div class="user-container">
                 <div class="user">
@@ -41,16 +98,32 @@
                   <span class="nickname">老公(o^^o)</span>
                 </div>
             </div>
-            <div>
-                <p class="mt-3">我们第一次聊天在</p>
-                <p id="first_time" class="first-time">2023-08-10 21:35:13</p>
-                <p class="mt-3">距今已有</p>
-                <div class="mt-3">
-                    <span id="t_d"></span>
-                    <span id="t_h"></span>
-                    <span id="t_m"></span>
-                    <span id="t_s"></span>
-                </div>
+            <style>
+                .message-text {
+                    text-align: center;
+                    font-size: 22px;
+                    color: #000;
+                    margin: 30px 0;
+                    line-height: 1.8;
+                    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+                }
+            
+                .highlight-text {
+                    color: #ff6b81;
+                    font-weight: bold;
+                }
+            
+                .emoji-text {
+                    font-size: 24px;
+                }
+            </style>
+            
+            
+            <!-- 替换原来的时间HTML为 -->
+            <div class="message-text">
+                每一次的相遇<br>
+                都是生命中<br>
+                <span class="highlight-text">最美好的礼物</span>
             </div>
             <!-- <div>
                 <img src="img/雪人.gif">
@@ -64,16 +137,16 @@
     <div class="section">
         <div>
             <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
-            <img class="corner-light light-top-left" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
-            <img class="corner-light light-top-right" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
-            <img src="https://www.freeimg.cn/i/2023/12/20/6582c07223f22.png" alt="礼袋" class="corner-image left-bottom-gift">
+            <!-- <img class="corner-light light-top-left" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light"> -->
+            <!-- <img class="corner-light light-top-right" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light"> -->
+            <img src="WechatIMG401.png" alt="礼袋" class="corner-image left-bottom-gift">
             <img src="WechatIMG392.png" alt="圣诞老人" class="corner-image right-bottom-oldman">
         </div>
         <div class="wordcloud">
             <div id="word_cloud" class="chart-container"></div>
         </div>
         <div class="keyword-container">
-            <div class="tp1">二〇二三</div>
+            <div class="tp1">二〇二四</div>
             <div class="tp1">你们说的最多的是</div>
             <div class="keyword">“宝贝”<span class="keyword-num">2935</span><span class="tp1">次</span></div>
             <!-- <img src="static/img/窗雪.png"> -->
@@ -145,12 +218,12 @@
     <div class="section">
         <div>
             <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
-            <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
-            <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+            <!-- <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light"> -->
+            <!-- <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light"> -->
             <img src="https://www.freeimg.cn/i/2023/12/20/6582c04589c47.png" alt="Left Bottom Image" class="corner-image left-bottom">
-            <img src="https://gitee.com/xiaokeaime/blogImage/raw/master/WechatIMG391.png" alt="Right Top Image" class="corner-image right-bottom" style="max-height: 500px;">
-            <img src="https://www.freeimg.cn/i/2023/12/20/6582c054816cf.png" alt="圣诞老人" class="center-top-time">
-            <img src="https://memotrace.cn/static/img/平安夜.png" alt="Right Top Image" class="left-time">
+            <img src="WechatIMG391.png" alt="Right Top Image" class="corner-image right-bottom" style="max-height: 500px;">
+            <img src="WechatIMG400.png" alt="圣诞老人" class="center-top-time">
+            <!-- <img src="WechatIMG390.png" alt="Right Top Image" class="left-time"> -->
             <div class="time-container">
                 <div class="text112">2024-02-07 04:59:06</div>
                 <div class="text112">这么晚了你们还在聊天</div>
@@ -181,11 +254,11 @@
     <div class="section">
         <div>
             <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
-            <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
-            <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
+            <!-- <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light"> -->
+            <!-- <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light"> -->
             <img src="https://www.freeimg.cn/i/2023/12/20/6582c03ce4548.png" alt="Left Bottom Image" class="corner-image left-bottom">
-            <img src="https://www.freeimg.cn/i/2023/12/20/6582c05a9a4bd.png" alt="滑雪的小女孩" class="corner-image right-bottom">
-            <img src="https://www.freeimg.cn/i/2023/12/20/6582c04d5151f.png" alt="Right Top Image" class="snow-ball">
+            <img src="WechatIMG399.png" alt="滑雪的小女孩" class="corner-image right-bottom">
+            <!-- <img src="https://www.freeimg.cn/i/2023/12/20/6582c04d5151f.png" alt="Right Top Image" class="snow-ball"> -->
             <img src="https://memotrace.cn/static/img/礼盒1.png" alt="Right Top Image" class="ttq">
             <div class="time-container">
                 <div class="text112">过去的一年里</div>
@@ -214,9 +287,9 @@
     <div class="section">
             <div>
                 <img class="Mountain-Image" src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="Mountain Image">
-                <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light">
-                <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light">
-                <img src="https://www.freeimg.cn/i/2023/12/20/6582c064276db.png" alt="包饺子" class="corner-image left-bottom">
+                <!-- <img class="corner-light light-top-left txt" src="https://www.freeimg.cn/i/2023/12/20/6582c05d9dcbb.png" alt="Top Left Light"> -->
+                <!-- <img class="corner-light light-top-right txt" src="https://www.freeimg.cn/i/2023/12/20/6582c07b257db.png" alt="Bottom Right Light"> -->
+                <img src="WechatIMG402.png" alt="包饺子" class="corner-image left-bottom">
                 <img src="https://www.freeimg.cn/i/2023/12/21/658313714609b.png" alt="Right Top Image" class="corner-image right-bottom">
                 <div class="calendar-container">
                     <div class="text012">2023年</div>
@@ -246,6 +319,88 @@
                 </div>
                 <div id="calendar-chart" class="calendar-chart"></div>
             </div>
+    </div>
+
+    <div class="section">
+        <div style="width: 100%; height: 100vh; background: linear-gradient(to bottom right, #7fffd4, #e6e6fa); position: relative; overflow: hidden;">
+            <!-- 雪花装饰 -->
+            <div class="snowflakes" style="position: absolute; width: 100%; height: 100%;">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="snowflake" style="position: absolute; top: 10%; left: 20%; width: 30px; opacity: 0.5;">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="snowflake" style="position: absolute; top: 30%; right: 15%; width: 30px; opacity: 0.5;">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="snowflake" style="position: absolute; bottom: 20%; left: 30%; width: 30px; opacity: 0.5;">
+                <img src="https://www.freeimg.cn/i/2023/12/20/6582c04711cd2.png" alt="snowflake" style="position: absolute; bottom: 40%; right: 25%; width: 30px; opacity: 0.5;">
+            </div>
+    
+            <!-- 主卡片容器 -->
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; height: 100vh;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" style="width: 100%; height: 100%;">
+                    <defs>
+                        <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#7fffd4;stop-opacity:0.9" />
+                            <stop offset="100%" style="stop-color:#e6e6fa;stop-opacity:0.9" />
+                        </linearGradient>
+                        <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="8" />
+                            <feOffset dx="0" dy="0" result="offsetblur" />
+                            <feFlood flood-color="rgba(0,0,0,0.15)" />
+                            <feComposite in2="offsetblur" operator="in" />
+                            <feMerge>
+                                <feMergeNode />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+    
+                    <!-- 卡片背景 -->
+                    <rect x="10" y="10" width="580" height="840" rx="40" ry="40" 
+                          fill="url(#cardGradient)" filter="url(#card-shadow)" />
+    
+                    <!-- 内容部分和之前相同，但位置略微调整 -->
+                    <!-- Title section -->
+                    <text x="40" y="60" font-family="PingFang SC, Microsoft YaHei" font-size="28" font-weight="bold" fill="#333">
+                        学习小能手 &amp; 老公(o^^o)
+                    </text>
+                    <text x="40" y="100" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">
+                        微信聊天报告
+                    </text>
+    
+                    <!-- September message -->
+                    <text x="40" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="28" font-weight="bold" fill="#333">2024年09月</text>
+                    <text x="40" y="220" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">发送了 4745 条消息</text>
+                    <text x="40" y="260" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">对你的话说不完</text>
+    
+                    <!-- Sweet message -->
+                    <text x="40" y="340" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">每一次的相遇</text>
+                    <text x="40" y="380" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">都是生命中</text>
+                    <text x="40" y="420" font-family="PingFang SC, Microsoft YaHei" font-size="24" font-weight="bold" fill="#ff6b81">最美好的礼物</text>
+    
+                    <!-- Statistics - Left side -->
+                    <text x="40" y="500" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">聊天天数</text>
+                    <text x="40" y="540" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">508 天</text>
+    
+                    <text x="40" y="600" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">发送消息</text>
+                    <text x="40" y="640" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">24217 条</text>
+    
+                    <text x="40" y="700" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">收到消息</text>
+                    <text x="40" y="740" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">31164 条</text>
+    
+                    <text x="40" y="780" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">总字数</text>
+                    <text x="40" y="820" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">325945</text>
+    
+                    <!-- Statistics - Right side -->
+                    <text x="300" y="500" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">年度关键词</text>
+                    <text x="300" y="540" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">宝贝</text>
+    
+                    <text x="300" y="600" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#333">活跃时段</text>
+                    <text x="300" y="640" font-family="PingFang SC, Microsoft YaHei" font-size="32" font-weight="bold" fill="#333">18:00-22:00</text>
+    
+                    <!-- Large vertical text -->
+                    <text x="520" y="200" font-family="PingFang SC, Microsoft YaHei" font-size="36" font-weight="bold" fill="#333" writing-mode="tb">
+                        甜蜜热烈的夜谈伴侣
+                    </text>
+                </svg>
+            </div>
+        </div>
     </div>
     
     <!-- Add more sections as needed -->
